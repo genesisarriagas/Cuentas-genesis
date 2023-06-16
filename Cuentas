@@ -1,0 +1,38 @@
+#ARRIAGA SANCHEZ GENESIS
+class cuenta:
+    def __init__ (self, numero, nombrePropietario, saldo,):
+        cuenta.contador_cuenta += 1
+        self._numero = numero
+        self._nombrePropietario = nombrePropietario
+        self._saldo = saldo
+
+    def __str__(self) -> str:
+        return f' cuenta [numero: {self._numero}, nombrePropietario: {self._nombrePropietario}, saldo: {self._saldo}]'
+    @property
+    def numero(self):
+        return self._numero
+    @numero.setter
+    def numero(self, numero):
+        self ._numero = numero
+    @property
+    def nombrePropietario(self):
+        return self._nombrePropietario
+    @nombrePropietario.setter
+    def nombrePropietario(self, nombrePropietario):
+        self ._nombrePropietario= nombrePropietario
+
+    @property
+    def saldo(self):
+        return self._saldo
+    @saldo.setter
+    def saldo(self, saldo):
+        self ._saldo = saldo
+
+
+cuenta = input('Favor indique numero de cuenta: ')
+nombrePropietario = input(str('Ingrese el propietario: '))
+ctaahorro = int(input('Favor Ingrese saldo anterior: '))
+deposito = int (input ('Ingrese monto a depositar: '))
+sum = ctaahorro + deposito
+print('El saldo de su cuenta es: ', sum)
+
